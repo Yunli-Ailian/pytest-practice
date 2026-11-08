@@ -1,2 +1,0 @@
-[32mINFO    [0m api:api.py:31 ->GEThttp://127.0.0.1:5000/todos/2
-[1m[31mERROR   [0m api:api.py:38 [连接失败]GEThttp://127.0.0.1:5000/todos/2

@@ -1,3 +1,0 @@
-2026-10-29 21:06:37,472[INFO]->GEThttp://127.0.0.1:5000/todos/2
-2026-10-29 21:06:37,475[INFO]<-200{"completed":false,"id":2,"title":"todo 2","userId":1}
-

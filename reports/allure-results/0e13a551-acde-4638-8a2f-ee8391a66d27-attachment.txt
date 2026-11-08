@@ -1,5 +1,0 @@
-[32mINFO    [0m api:api.py:31 ->POSThttp://127.0.0.1:5000/todos
-[32mINFO    [0m api:api.py:40 <-201{"completed":false,"id":203,"title":"crud \u6d4b\u8bd5","userId":1}
-
-[32mINFO    [0m api:api.py:31 ->GEThttp://127.0.0.1:5000/todos/1
-[32mINFO    [0m api:api.py:40 <-404{"message":"not found"}
