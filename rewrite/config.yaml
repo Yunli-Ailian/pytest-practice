@@ -1,0 +1,13 @@
+env: test
+
+environments:
+  test:
+    base_url: http://127.0.0.1:5000
+    timeout: 10
+  prod:
+  base_url: https://api.example.com
+  timeout: 30
+
+account:
+  username: admin
+  password: "123456"

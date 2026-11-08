@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "backend": "native",
+  "rasterEngine": "libreoffice",
+  "source": "saved",
+  "inputPath": "D:\\softwareTest\\我的进步\\docs\\简历-改稿.docx",
+  "sourceSha256": "065d7a0c728b80510502a0a6ff25859523d0649883ba295eebb87a621a2d08bd",
+  "dpi": 144,
+  "pageCount": 3,
+  "images": [
+    {
+      "index": 1,
+      "page": 1,
+      "path": "D:\\softwareTest\\我的进步\\.dsh-office-e99576befd8142a388ad7cda508bd2a4\\render\\page-0001.png",
+      "width": 1224,
+      "height": 1584,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 816,
+        "height": 1056
+      },
+      "byteLength": 108524
+    },
+    {
+      "index": 2,
+      "page": 2,
+      "path": "D:\\softwareTest\\我的进步\\.dsh-office-e99576befd8142a388ad7cda508bd2a4\\render\\page-0002.png",
+      "width": 1224,
+      "height": 1584,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 816,
+        "height": 1056
+      },
+      "byteLength": 107615
+    },
+    {
+      "index": 3,
+      "page": 3,
+      "path": "D:\\softwareTest\\我的进步\\.dsh-office-e99576befd8142a388ad7cda508bd2a4\\render\\page-0003.png",
+      "width": 1224,
+      "height": 1584,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 816,
+        "height": 1056
+      },
+      "byteLength": 33162
+    }
+  ],
+  "missingFonts": []
+}

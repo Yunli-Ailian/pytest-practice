@@ -1,0 +1,12 @@
+2026-10-29 21:14:40,977[INFO]->POSThttp://127.0.0.1:5000/todos
+2026-10-29 21:14:40,980[INFO]<-201{"completed":false,"id":202,"title":"crud \u6d4b\u8bd5","userId":1}
+
+2026-10-29 21:14:40,980[INFO]->GEThttp://127.0.0.1:5000/todos/202
+2026-10-29 21:14:40,981[INFO]<-200{"completed":false,"id":202,"title":"crud \u6d4b\u8bd5","userId":1}
+
+2026-10-29 21:14:40,982[INFO]->PATCHhttp://127.0.0.1:5000/todos/202
+2026-10-29 21:14:40,983[INFO]<-200{"completed":true,"id":202,"title":"crud \u6d4b\u8bd5","userId":1}
+
+2026-10-29 21:14:40,983[INFO]->DELETEhttp://127.0.0.1:5000/todos/202
+2026-10-29 21:14:40,985[INFO]<-200{}
+

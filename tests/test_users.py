@@ -1,6 +1,9 @@
 import pytest
 import requests
 import json
+from core.api import TodoAPI
+from test_crud import log_time
+
 #@pytest.mark.parametrize("todo_id", [1, 2, 3, 4, 5]) —— 这行是告诉 pytest：「这个函数跑五次，每次 todo_id 换一个值」。
 #跑出来的结果会显示成 test_todo_status[1]、[2]……一条一条列开。
 #fixture 不是全局变量。 它不会自己出现在函数里，必须写进参数列表，pytest 才会去找它、塞进来。
@@ -56,7 +59,32 @@ def fresh_todo(session,base_url):
 #一，httpbin.org/delay/5 会故意拖 5 秒才回应，你给 timeout=1，1 秒就掐断，所以会抛 Timeout 异常。
 #二，pytest.raises(...) 的意思是「下面这段代码必须抛这个异常，不抛我才判你失败」。这是测试异常的标准写法：拿异常当预期。
 #三，with 是 Python 的上下文写法，和 open() 那个一样，代码块结束时自动收尾。
-@pytest.mark.smoke
+@pytest.mark.network
 def test_timeout():
     with pytest.raises(requests.exceptions.Timeout):
         requests.get("https://httpbin.org/delay/5",timeout=1)
+        
+@pytest.mark.parametrize("case", CASES) 
+def test_todo_status(session,base_url,case):
+    api = TodoAPI(session,base_url)
+    r = api.get(case["id"])
+    assert r.status_code == case["expect"]
+    
+# @pytest.mark.smoke
+# @log_time
+# def test_todo_crud(session,base_url):
+#     api = TodoAPI(session,base_url)
+
+#     r = api.create("crud 测试")
+#     assert r.status_code == 201
+#     new_id = r.json()["id"]
+#     assert new_id is not None
+
+#     r = api.get(1)
+#     assert r.status_code == 200 
+
+#     r = api.update(1,{"completed":True})
+#     assert r.status_code == 200
+
+#     r = api.delete(1)
+#     assert r.status_code == 200

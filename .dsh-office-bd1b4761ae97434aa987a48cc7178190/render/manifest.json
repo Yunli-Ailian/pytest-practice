@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "backend": "native",
+  "rasterEngine": "pdfium",
+  "source": "saved",
+  "inputPath": "C:\\Users\\14165\\Documents\\xwechat_files\\wxid_kbixw2n333ag22_474e\\msg\\file\\2026-11\\个人简历-软件测试方向.pdf",
+  "sourceSha256": "d11a4fffebda01b7eea13d809484b19c602b922086969d76ffa811bd200978a8",
+  "dpi": 144,
+  "pageCount": 2,
+  "images": [
+    {
+      "index": 1,
+      "page": 1,
+      "path": "D:\\softwareTest\\我的进步\\.dsh-office-bd1b4761ae97434aa987a48cc7178190\\render\\page-0001.png",
+      "width": 1588,
+      "height": 2246,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1058.6666666666667,
+        "height": 1497.3333333333333
+      },
+      "byteLength": 403546
+    },
+    {
+      "index": 2,
+      "page": 2,
+      "path": "D:\\softwareTest\\我的进步\\.dsh-office-bd1b4761ae97434aa987a48cc7178190\\render\\page-0002.png",
+      "width": 1588,
+      "height": 2246,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 1058.6666666666667,
+        "height": 1497.3333333333333
+      },
+      "byteLength": 481301
+    }
+  ],
+  "missingFonts": []
+}
