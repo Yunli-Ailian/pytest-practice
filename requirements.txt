@@ -1,0 +1,7 @@
+pytest>=8.0
+requests>=2.31
+PyYAML>=6.0
+Flask>=3.0
+playwright>=1.40
+allure-pytest>=2.13
+pytest-html>=4.0
